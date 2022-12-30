@@ -25,7 +25,7 @@ SOFTWARE.
 */
 
 #include <GarrysMod/Lua/Interface.h>
-#include <GarrysMod/Interfaces.hpp>
+#include <GarrysMod/FactoryLoader.hpp>
 
 #include <icvar.h>
 
