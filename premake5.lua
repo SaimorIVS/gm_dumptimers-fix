@@ -1,5 +1,5 @@
 PROJECT_GENERATOR_VERSION = 3
-
+externalincludedirs = sysincludedirs
 newoption {
     trigger = "gmcommon",
     description = "Sets the path to the garrysmod_common (https://github.com/danielga/garrysmod_common) directory",
