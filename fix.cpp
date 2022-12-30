@@ -30,7 +30,7 @@ SOFTWARE.
 #include <icvar.h>
 
 GMOD_MODULE_OPEN() {
-	ICvar *icvar = SourceSDK::FactoryLoader("vstdlib", true, IS_SERVERSIDE, "bin/").GetInterface<ICvar>(CVAR_INTERFACE_VERSION);
+	ICvar *icvar = SourceSDK::FactoryLoader("vstdlib").GetInterface<ICvar>(CVAR_INTERFACE_VERSION);
 	ConCommandBase *lua_dumptimers_sv = icvar->FindCommandBase("lua_dumptimers_sv");
 	if (lua_dumptimers_sv) icvar->UnregisterConCommand(lua_dumptimers_sv);
 	return 0;
