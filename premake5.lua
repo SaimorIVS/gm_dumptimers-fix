@@ -10,6 +10,9 @@ include(assert(_OPTIONS.gmcommon or os.getenv("GARRYSMOD_COMMON"), "you didn't p
 
 CreateWorkspace {name = "dumptimers_fix"}
     CreateProject {serverside = true}
+        IncludeLuaShared()
+        IncludeDetouring()
+        IncludeScanning()
         IncludeSDKCommon()
+        IncludeSDKTier0()
         files {"fix.cpp"}
-        links { "dl" }
