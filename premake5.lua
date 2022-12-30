@@ -12,3 +12,4 @@ CreateWorkspace {name = "dumptimers_fix"}
     CreateProject {serverside = true}
         IncludeSDKCommon()
         files {"fix.cpp"}
+        links { "dl" }
